@@ -1,0 +1,60 @@
+.btn{
+    padding: 0.5rem 1rem;
+    border:1px solid #a57adc;
+    border-radius: 10px;
+    background-color: #c8b1e4;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.9); /*makes the button shrink when clicked*/
+}
+.modal-btn{
+    border: none;
+    font-size: 1.5rem;
+
+}
+.modal{
+    width: 500px;
+    position: fixed;
+    top: -50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.5s ease-in-out;
+    border: 1px solid #a57adc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 2;
+}
+.modal.active{
+    top: 20%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color:rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid #ccc;
+}
+.body{
+    padding: 1rem;
+    
+}
+
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+   
+}
+#overlay.active{
+    display: block;
+}
